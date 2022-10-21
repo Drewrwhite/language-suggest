@@ -13,26 +13,28 @@ window.addEventListener("load", function (event) {
   form.addEventListener("submit", function (event) {
     event.preventDefault();
     hideResults();
+
     const userName = document.querySelector("input#userName").value;
     const skynet = document.querySelector("input[name='skynet']:checked").value;
     const exp = document.querySelector("input[name='exp']:checked").value;
     const simple = document.querySelector("input[name='simple']:checked").value;
     const none = document.querySelector("input[name='none']:checked").value;
     document.querySelector("span#resultName").innerText = userName;
+    result.removeAttribute("class", "hidden")
 
 
-    if (noSimple === false && noExp === true && noSkynet === true) {
-      document.getElementById("cSharp").removeAttribute("class", "hidden");
+    if (skynet === "no" && exp === "yes" && simple === "no") {
+      document.getElementById("cSharp").removeAttribute("class");
 
-    } else if (noSimple === true && noExp === false && noSkynet === true) {
-      document.getElementById("js").removeAttribute("class", "hidden");
+    } else if (skynet === "no" && simple === "yes" && exp === "no" && none === "yes") {
+      document.getElementById("js").removeAttribute("class");
 
-    } else if (noSimple === true && noNull === true && noSkynet === true) {
-      document.getElementById("python").removeAttribute("class", "hidden");
+    } else if (skynet === "no" && exp = "no" && simple === "yes" && none === "no") {
+    document.getElementById("python").removeAttribute("class");
 
-    } else if (noSkynet === false) {
-      document.getElementById("skynet").removeAttribute("class", "hidden");
+  } else if (skynet === "yes") {
+    document.getElementById("skynet").removeAttribute("class");
 
-    }
-  })
+  }
+})
 })
