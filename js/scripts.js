@@ -14,3 +14,26 @@ window.addEventListener("load", function () {
   form.addEventListener("submit", function (event) {
     event.preventDefault();
     hideResults();
+    const userName = document.querySelector("input#userName").value
+    const noSkynet = document.querySelector("noSkynet").value;
+    const noExp = document.querySelector("noExp").value;
+    const noSimple = document.querySelector("noSimple").value;
+    const noNull = document.querySelector("noNull").value;
+    document.querySelector("span#resultName").innerText = userName;
+    summary.removeAttribute("class");
+
+    if (noSimple === false && noExp === true && noSkynet === true) {
+      document.getElementById("cSharp").removeAttribute("class");
+
+    } else if (noSimple === true && noExp === false && noSkynet === true) {
+      document.getElementById("js").removeAttribute("class");
+
+    } else if (noSimple === true && noNull === true && noSkynet === true) {
+      document.getElementById("python").removeAttribute("class");
+
+    } else if (noSkynet === false) {
+      document.getElementById("skynet").removeAttribute("class");
+
+    }
+  })
+})
