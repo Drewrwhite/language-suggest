@@ -50,3 +50,13 @@ img {
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+button {
+  background-color: rgba(94, 255, 0, 0.293);
+  color: #949e99;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 2px;
+  border-radius: 12%;
+  font-size: 18px;
+}
