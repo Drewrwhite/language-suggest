@@ -3,6 +3,13 @@
   width: 500px !important;
 }
 
+.jumbotron {
+  color: #000000;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-size: auto;
+  background-color: #949e99;
+}
+
 img {
   width: 500px !important;
 }
