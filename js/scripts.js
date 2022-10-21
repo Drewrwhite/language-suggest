@@ -14,24 +14,24 @@ window.addEventListener("load", function (event) {
     event.preventDefault();
     hideResults();
     const userName = document.querySelector("input#userName").value;
-    const noSkynet = document.querySelector("input[name='noSkynet']:checked").value;
-    const noExp = document.querySelector("input[name='noExp']:checked").value;
-    const noSimple = document.querySelector("input[name='noSimple']:checked").value;
-    const noNull = document.querySelector("input[name='noNull']:checked").value;
+    const skynet = document.querySelector("input[name='skynet']:checked").value;
+    const exp = document.querySelector("input[name='exp']:checked").value;
+    const simple = document.querySelector("input[name='simple']:checked").value;
+    const none = document.querySelector("input[name='none']:checked").value;
     document.querySelector("span#resultName").innerText = userName;
 
 
     if (noSimple === false && noExp === true && noSkynet === true) {
-      document.getElementById("cSharp").removeAttribute("class");
+      document.getElementById("cSharp").removeAttribute("class", "hidden");
 
     } else if (noSimple === true && noExp === false && noSkynet === true) {
-      document.getElementById("js").removeAttribute("class");
+      document.getElementById("js").removeAttribute("class", "hidden");
 
     } else if (noSimple === true && noNull === true && noSkynet === true) {
-      document.getElementById("python").removeAttribute("class");
+      document.getElementById("python").removeAttribute("class", "hidden");
 
     } else if (noSkynet === false) {
-      document.getElementById("skynet").removeAttribute("class");
+      document.getElementById("skynet").removeAttribute("class", "hidden");
 
     }
   })
