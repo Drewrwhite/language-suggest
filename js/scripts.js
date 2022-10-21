@@ -23,18 +23,30 @@ window.addEventListener("load", function (event) {
     result.removeAttribute("class", "hidden")
 
 
-    if (skynet === "no" && exp === "yes" && simple === "no") {
+    if (skynet === "no" && exp === "yes" && simple === "no" && none === "no") {
       document.getElementById("cSharp").removeAttribute("class");
 
-    } else if (skynet === "no" && simple === "yes" && exp === "no" && none === "yes") {
+    } else if (skynet === "no" && exp === "no" && simple === "yes" && none === "no") {
       document.getElementById("js").removeAttribute("class");
 
-    } else if (skynet === "no" && exp = "no" && simple === "yes" && none === "no") {
-    document.getElementById("python").removeAttribute("class");
+    } else if (skynet === "no" && exp === "yes" && simple == "yes" && none === "no") {
+      document.getElementById("js").removeAttribute("class");
 
-  } else if (skynet === "yes") {
-    document.getElementById("skynet").removeAttribute("class");
+    } else if (skynet === "no" && exp === "no" && simple == "no" && none === "yes") {
+      document.getElementById("cSharp").removeAttribute("class");
 
-  }
-})
+    } else if (skynet === "no" && exp === "yes" && simple == "no" && none === "yes") {
+      document.getElementById("cSharp").removeAttribute("class");
+
+    } else if (skynet === "no" && exp === "yes" && simple == "yes" && none === "yes") {
+      document.getElementById("python").removeAttribute("class");
+
+    } else if (skynet === "no" && exp === "no" && simple == "yes" && none === "yes") {
+      document.getElementById("python").removeAttribute("class");
+
+    } else if (skynet === "yes") {
+      document.getElementById("skynet").removeAttribute("class");
+
+    }
+  })
 })
