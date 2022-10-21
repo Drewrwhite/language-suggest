@@ -5,7 +5,7 @@ function hideResults() {
   document.getElementById("skynet").setAttribute("class", "hidden");
 }
 
-window.addEventListener("load", function () {
+window.addEventListener("load", function (event) {
 
   const form = document.querySelector("form");
   const result = document.getElementById("result");
@@ -13,13 +13,13 @@ window.addEventListener("load", function () {
   form.addEventListener("submit", function (event) {
     event.preventDefault();
     hideResults();
-    const userName = document.querySelector("input#userName").value
+    const userName = document.querySelector("input#userName").value;
     const noSkynet = document.querySelector("input[name='noSkynet']:checked").value;
     const noExp = document.querySelector("input[name='noExp']:checked").value;
     const noSimple = document.querySelector("input[name='noSimple']:checked").value;
     const noNull = document.querySelector("input[name='noNull']:checked").value;
     document.querySelector("span#resultName").innerText = userName;
-    summary.removeAttribute("class");
+
 
     if (noSimple === false && noExp === true && noSkynet === true) {
       document.getElementById("cSharp").removeAttribute("class");
