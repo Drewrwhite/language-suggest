@@ -17,7 +17,7 @@ _Programming Language Suggestion page with radio buttons to ask questions and do
 
 ## Link to GitHub Pages
 
-[https://drewrwhite.github.io/portfolio/](https://drewrwhite.github.io/portfolio/)
+[https://drewrwhite.github.io/language-suggest/](https://drewrwhite.github.io/language-suggest/)
 
 ## Setup/Installation Requirements
 
