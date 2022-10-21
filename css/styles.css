@@ -1,15 +1,27 @@
-.hidden {
+/* .hidden {
   display: none;
   width: 500px !important;
-}
+} */
 
 .jumbotron {
   color: #000000;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   background-size: auto;
   background-color: #949e99;
+
+}
+
+body {
+  background-color: #000000;
+  color: #949e99
+}
+
+h1 {
+  text-shadow: 1px 1px 2px rgb(36, 36, 36);
 }
 
 img {
-  width: 500px !important;
+  width: 300px !important;
+  height: 350px !important;
+
 }
