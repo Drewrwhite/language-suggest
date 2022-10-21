@@ -5,7 +5,6 @@ function hideResults() {
   document.getElementById("skynet").setAttribute("class", "hidden");
 }
 
-
 window.addEventListener("load", function () {
 
   const form = document.querySelector("form");
@@ -15,10 +14,10 @@ window.addEventListener("load", function () {
     event.preventDefault();
     hideResults();
     const userName = document.querySelector("input#userName").value
-    const noSkynet = document.querySelector("noSkynet").value;
-    const noExp = document.querySelector("noExp").value;
-    const noSimple = document.querySelector("noSimple").value;
-    const noNull = document.querySelector("noNull").value;
+    const noSkynet = document.querySelector("input[name='noSkynet']:checked").value;
+    const noExp = document.querySelector("input[name='noExp']:checked").value;
+    const noSimple = document.querySelector("input[name='noSimple']:checked").value;
+    const noNull = document.querySelector("input[name='noNull']:checked").value;
     document.querySelector("span#resultName").innerText = userName;
     summary.removeAttribute("class");
 
