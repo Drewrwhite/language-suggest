@@ -10,6 +10,7 @@
 - _CSS_
 - _GIT_
 - _BootStrap_
+- _JavaScript_
 
 ## Description
 
