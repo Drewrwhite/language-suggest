@@ -42,6 +42,9 @@ window.addEventListener("load", function (event) {
     } else if (skynet === "no" && exp === "yes" && simple == "yes" && none === "yes") {
       document.getElementById("python").removeAttribute("class");
 
+    } else if (skynet === "no" && exp === "no" && simple == "no" && none === "no") {
+      document.getElementById("cSharp").removeAttribute("class");
+
     } else if (skynet === "no" && exp === "no" && simple == "yes" && none === "yes") {
       document.getElementById("python").removeAttribute("class");
 
