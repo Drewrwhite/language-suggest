@@ -1,91 +1,125 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/scripts.js"></script>
-  <title>What Programming Language is right for you?</title>
-</head>
-<body class="container">
-  <div>
-    <div class="container">
-      <div class="jumbotron text-center">
-      <h1>Answer the questions below to decide what programming language is right for you!</h1>
-      </div>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/scripts.js"></script>
+    <title>What Programming Language is right for you?</title>
+  </head>
+  <body class="container">
+    <div>
+      <div class="container">
+        <div class="jumbotron text-center">
+          <h1>
+            Answer the questions below to decide what programming language is
+            right for you!
+          </h1>
+        </div>
       </div>
       <div class="card">
         <div class="card-body">
-    <form>
-      <label for="userName"><strong>What should we call you?</strong></label>
-      <input id="userName" type="text" placeholder="Cyberdyne System's T-800">
-      <br>
-      <br>
-      <p><strong>Do you want to build an AI that will eventually take over the world?</strong></p>
-        <div>
-          <input id="yesSkynet" type="radio" name="skynet" value="yes" checked>
-          <label>Heck yeah!</label>
-          <br>
-          <input id="noSkynet" type="radio" name="skynet" value="no">   
-          <label>Big nope for me!</label>
+          <form>
+            <label for="userName"
+              ><strong>What should we call you?</strong></label>
+            <input id="userName" type="text" placeholder="Cyberdyne T-800">
+            <br>
+            <br>
+            <p>
+              <strong>Do you want to build an AI that will eventually take over the world?</strong>
+            </p>
+            <div>
+              <input id="yesSkynet" type="radio" name="skynet" value="yes" checked>
+              <label>Heck yeah!</label>
+              <br>
+              <input id="noSkynet" type="radio" name="skynet" value="no">
+              <label>Big nope for me!</label>
+            </div>
+            <br>
+            <p><strong>Do you have programming experience?</strong></p>
+            <div>
+              <input id="yesExp" type="radio" name="exp" value="yes" checked>
+              <label>Yes, at least some</label>
+              <br>
+              <input id="noExp" type="radio" name="exp" value="no">
+              <label>No, none at all</label>
+            </div>
+            <br>
+            <p><strong>Do you like to keep things simple?</strong></p>
+            <div>
+              <input id="yesSimple" type="radio" name="simple" value="yes" checked>
+              <label>Of course!</label>
+              <br>
+              <input id="noSimple" type="radio" name="simple" value="no">
+              <label>I like a challenge!</label>
+            </div>
+            <br>
+            <p><strong>None or Null?</strong></p>
+            <div>
+              <input id="yesNull" type="radio" name="none" value="yes" checked>
+              <label>None</label>
+              <br>
+              <input id="noNull" type="radio" name="none" value="no">
+              <label>Null</label>
+            </div>
+            <br>
+            <div>
+              <button type="submit">Submit</button
+              ><button type="reset" onClick="history.go(0);">Reset</button>
+            </div>
+          </form>
         </div>
-        <br>        
-        <p><strong>Do you have programming experience?</strong></p>
-        <div>
-          <input id="yesExp" type="radio" name="exp" value="yes" checked>
-          <label>Yes, at least some</label>
-          <br>
-          <input id="noExp" type="radio" name="exp" value="no">   
-          <label>No, none at all</label>
-        </div>
-        <br>
-        <p><strong>Do you like to keep things simple?</strong></p>
-        <div>
-          <input id="yesSimple" type="radio" name="simple" value="yes" checked>
-          <label>Of course!</label>
-          <br>
-          <input id="noSimple" type="radio" name="simple" value="no">   
-          <label>I like a challenge!</label>
-        </div>
-        <br>
-        <p><strong>None or Null?</strong></p>
-        <div>
-          <input id="yesNull" type="radio" name="none" value="yes" checked>
-          <label>None</label>
-          <br>
-          <input id="noNull" type="radio" name="none" value="no">   
-          <label>Null</label>
-        </div>
-        <br>
-        <div>
-          <button type="submit">Submit</button><button type="reset" onClick="history.go(0);">Reset</button>
-        </div>
-    </form>
-    </div>
       </div>
-    <br>
-    <div id="result" class="hidden">
-      <h2>Results</h2>
-      <h4><span id="resultName">____</span>,</h4>
+      <br>
+      <div id="result" class="hidden">
+        <h2>Results</h2>
+        <h4><span id="resultName">____</span>,</h4>
         <br>
-        <h5>It looks like we found the Programming language that could be right for you!</h5>
+        <h5>
+          It looks like we found the Programming language that could be right
+          for you!
+        </h5>
+      </div>
+      <br>
+      <div id="cSharp" class="hidden">
+        <img src="images/c-sharp.png" alt="C#">
+        <p>
+          C# (pronounced "See Sharp") is a modern, object-oriented, and
+          type-safe programming language. C# enables developers to build many
+          types of secure and robust applications that run in . NET. C# has its
+          roots in the C family of languages and will be immediately familiar to
+          C, C++, Java, and JavaScript programmers. C# requires discipline and
+          can be considered hard to learn.
+        </p>
+      </div>
+      <div id="js" class="hidden">
+        <img src="images/js.png" alt="JavaScript">
+        <p>
+          JavaScript is a dynamic computer programming language. It is
+          lightweight and most commonly used as a part of web pages, whose
+          implementations allow client-side script to interact with the user and
+          make dynamic pages. It is an interpreted programming language with
+          object-oriented capabilities. Javascript is the first programming
+          language for many.
+        </p>
+      </div>
+      <div id="python" class="hidden">
+        <img src="images/python.png" alt="Python">
+        <p>
+          Python is a high-level, interpreted, interactive and object-oriented
+          scripting language. Python is designed to be highly readable. It uses
+          English keywords frequently where as other languages use punctuation,
+          and it has fewer syntactical constructions than other languages.
+          Syntax in Python is simplified with an emphasis on natural language.
+          Meaning, it is known to be great as a first language!
+        </p>
+      </div>
+      <div id="skynet" class="hidden">
+        <img src="images/terminator.png" alt="Terminator">
+        <p>
+          Please don't ever start learning a programming language! The whole
+          world's and John Connor's lives depend on it!
+        </p>
+      </div>
     </div>
-    <br>
-    <div id="cSharp" class="hidden">
-      <img src="images/c-sharp.png" alt="C#">
-      <p>C# (pronounced "See Sharp") is a modern, object-oriented, and type-safe programming language. C# enables developers to build many types of secure and robust applications that run in . NET. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers. C# requires discipline and can be considered hard to learn.</p>
-    </div>
-    <div id="js" class="hidden">
-      <img src="images/js.png" alt="JavaScript">
-      <p>JavaScript is a dynamic computer programming language. It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user and make dynamic pages. It is an interpreted programming language with object-oriented capabilities. Javascript is the first programming language for many.</p>
-    </div>
-    <div id="python" class="hidden">
-      <img src="images/python.png" alt="Python">
-      <p>Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages. Syntax in Python is simplified with an emphasis on natural language. Meaning, it is known to be great as a first language!</p>
-    </div>
-    <div id="skynet" class="hidden">
-      <img src="images/terminator.png" alt="Terminator">
-      <p>Please don't ever start learning a programming language! The whole world's and John Connor's lives depend on it!</p>
-    </div>
-</div>
-</body>
+  </body>
 </html>

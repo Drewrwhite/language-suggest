@@ -1,3 +1,5 @@
+//Business Logic
+
 function hideResults() {
   document.getElementById("result").setAttribute("class", "hidden")
   document.getElementById("cSharp").setAttribute("class", "hidden");
@@ -5,8 +7,9 @@ function hideResults() {
   document.getElementById("python").setAttribute("class", "hidden");
   document.getElementById("skynet").setAttribute("class", "hidden");
 }
+//UI Logic
 
-window.addEventListener("load", function (event) {
+window.addEventListener("load", function () {
 
   let form = document.querySelector("form");
   let result = document.getElementById("result");
@@ -50,6 +53,9 @@ window.addEventListener("load", function (event) {
 
     } else if (skynet === "yes") {
       document.getElementById("skynet").removeAttribute("class");
+
+    } else {
+      document.getElementById("python").removeAttribute("class");
     }
   })
 })
