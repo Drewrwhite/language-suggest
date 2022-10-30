@@ -1,4 +1,4 @@
-//Business Logic
+
 
 function hideResults() {
   document.getElementById("result").setAttribute("class", "hidden")
@@ -7,7 +7,7 @@ function hideResults() {
   document.getElementById("python").setAttribute("class", "hidden");
   document.getElementById("skynet").setAttribute("class", "hidden");
 }
-//UI Logic
+
 
 window.addEventListener("load", function () {
 
